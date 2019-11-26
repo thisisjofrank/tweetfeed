@@ -1,5 +1,4 @@
 import React from 'react';
-import './App.css';
 
 import Header from './components/header.js';
 import Feed from './components/feed.js';

@@ -5,7 +5,7 @@ import Text from './text.js'
 
 
 // It would be nice to do some processing on the fav/retweet numbers so that when they reach over 9,999 they are shown as 10K etc
-// Also would have implemented actual SVG icons for the fav/retweet given more time to focus on styling
+// Also would have implemented actual SVG icons for the fav/retweet given more time to focus on styling 
 // Also, also, this component is getting too big. Should be split into sparate componenets.
 
 

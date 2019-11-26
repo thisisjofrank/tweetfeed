@@ -2,6 +2,14 @@ import React, { Component } from 'react';
 import styled from 'styled-components'
 import color from './variables/colour.js';
 
+class LoadMore extends Component {
+  render() {
+    return (
+      <Button role="button" onClick={this.props.onclick}>Load more</Button>
+    );
+  }
+}
+
 const Button = styled.button`
   display: block;
   margin: 0 auto 30px;
@@ -14,14 +22,5 @@ const Button = styled.button`
       background-color: ${color.secondary};
     }
 `
-
-class LoadMore extends Component {
-  render() {
-   
-    return (
-      <Button role="button" onClick={this.props.onclick}>Load more</Button>
-    );
-  }
-}
 
 export default LoadMore;

@@ -2,11 +2,6 @@ import React, { Component } from 'react';
 import styled from 'styled-components'
 import processString from 'react-process-string';
 
-const Content = styled.p`
-  grid-area: text;
-  margin-bottom: 1em;
-`
-
 class Header extends Component {
   render() {
 
@@ -27,11 +22,16 @@ class Header extends Component {
 
      return (
       <Content>
-      {processed}
-    </Content>
+        {processed}
+      </Content>
 
     );
   }
 }
+
+const Content = styled.p`
+  grid-area: text;
+  margin-bottom: 1em;
+`
 
 export default Header;
