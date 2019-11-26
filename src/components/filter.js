@@ -12,7 +12,7 @@ class Filter extends Component {
           <Input id="filter" type="text" name="search" placeholder="Filter feed" onChange={this.props.onchange} />
           <Submit type="submit" value="Filter" />
           <CheckButton htmlFor="favourites">
-            Show top tweets
+            Show top tweets:
             <Slider top={this.props.top}></Slider>
           </CheckButton>
           <Checkbox id="favourites" type="checkbox" onChange={this.props.oncheck} />
@@ -27,13 +27,16 @@ const Form = styled.form`
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  max-width: 300px;
-  margin: 0px;
+  margin: 0;
+  padding: 20px 2vw;
+  background-color: ${color.primary}
   @media screen and (min-width: 768px) {
     justify-content: flex-end;
     position: absolute;
     right: 2vw;
     top: 1vw;
+    max-width: 300px;
+    padding: 0;
   }
 `
 
@@ -69,8 +72,12 @@ const Checkbox = styled.input`
 const CheckButton = styled.label`
   display: flex;
   align-items: center;
-  margin-top: 10px;
+  height: 40px;
+  margin-left: 20px;
   color: white;
+  @media screen and (min-width: 768px) {
+    margin-top: 10px;
+  }
 `
 
 const Slider = styled.span`
