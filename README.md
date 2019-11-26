@@ -1,3 +1,68 @@
+
+
+
+jf-buzzfeed
+
+Show
+README.md
+# BuzzFeed - Technical Exercise
+​
+### Setup
+​
+We have set up this workspace to work automatically with React so that you're able to write in JSX if you like - but you're very welcome to delete the existing files in `app/` and use a different framework.
+​
+If you prefer to develop locally you can use the "Tools" and "Export" menu to download this project. Note, this tools menu is only visible once you have remixed the project.
+​
+### Carrying out the exercise
+​
+1. Hit the "Remix to Edit" button to fork the project.
+2. Make your changes! Please don't spend more than a couple of hours on this task. 
+3. Once you're finished please send a link to your work to your point of contact within BuzzFeed Recruitment. If you have developed offline you should send your finished project in the email.
+​
+​
+## The exercise: Twitter Timeline
+​
+The goal of this exercise it to render a page of Tweets and give the user the ability to page through, search and filter them.
+​
+The JSON data for the list of tweets is imported for you into app.jsx so there is no need to do any data fetching. You should only need to change files within `app/`.
+​
+### Tasks
+​
+#### 1. Render and style the first page obof tweets.
+​
+a) Each page should consist of 10 tweets. Each tweet should show:
+   - Avatar
+   - Author
+   - Text
+   - Favourite Count
+   - Retweet Count
+​
+b) Style the tweets so they look like media objects. They should look similar to the below but this is only a guideline.
+​
+   ![tweet example](https://cdn.glitch.com/9a8a2b63-234f-4e14-abaf-c98158061e5c%2Ftweet.png?1540204261739)
+​
+**Please note:** Some of the tweets contain URLs. You do not need to render these as links, they can remain plaintext.
+​
+#### 2. Add a button to load subsequent pages
+​
+Each time you click this button it should load in another 10 tweets.
+​
+#### 3. Add a form element to allow the user to search through the tweets by text
+​
+This, and all subsequent filters, should filter the entire list of tweets and not just the first page.
+​
+- **Test case**: filtering by 'ob' should render 4 tweets.
+- **Test case**: filtering by 'ob' should remove the "load more" button as there is now only one page.
+​
+#### 4. Add a form element to trigger only displaying tweets with more than 20 favourites
+​
+- **Test case**: filtering by favourites > 20 should render a full page of tweets.
+- **Test case**: filtering by favourites > 20 should still show the "load more" button and the filter should apply to the next tweets.
+​
+
+
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
@@ -28,41 +93,3 @@ Your app is ready to be deployed!
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
 ### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
